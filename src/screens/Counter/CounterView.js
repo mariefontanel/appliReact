@@ -1,7 +1,7 @@
 import {Text, View, Image, ScrollView} from "react-native";
 import React, {Component} from 'react';
 import styles from './CounterStyle';
-import Button from "../../components/Button/Button";
+import MyButton from "../../components/Button/MyButton";
 
 export default class CounterView extends Component {
     render() {
@@ -17,13 +17,13 @@ export default class CounterView extends Component {
 
                     <View style={styles.boxLikeDislike}>
                         <View style={styles.boxDislike}>
-                            <Button
+                            <MyButton
                                 title={"J'aime pas"}
                                 onPressButton={this.props.less}
                             />
                         </View>
                         <View style={styles.boxLike}>
-                            <Button
+                            <MyButton
                                 title={"J'aime"}
                                 onPressButton={this.props.plus}
                             />

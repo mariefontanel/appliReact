@@ -37,10 +37,10 @@ export default class TimeoutView extends Component {
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => {
-                        this.props.navigation.navigate('LoginView');
+                        this.props.navigation.navigate('Home');
                     }}
                 >
-                    <Text style={styles.text}>Page de Login</Text>
+                    <Text style={styles.text}>Se déconnecter</Text>
                 </TouchableOpacity>
             </View>
         );

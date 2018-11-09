@@ -19,9 +19,9 @@ export default class HomeScreenView extends React.Component {
                     <TouchableOpacity
                         style={styles.button}
                         onPress={() => {
-                        this.props.navigation.navigate('TimeoutView');
+                        this.props.navigation.navigate('Login');
                     }}>
-                        <Text style={styles.text}>Découvrir l'appli</Text>
+                        <Text style={styles.text}>Login</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#F5FCFF',
     },
-    button: {
+    button: {   
         alignItems: 'center',
         backgroundColor: '#DDDDDD',
         padding: 20,
